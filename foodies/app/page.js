@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import classes from './page.module.css'
+import ImageSlideshow from "@/components/images/image-slideshow";
 
 export default function Home() {
   const { header, slideshow, hero, cta, section } = classes
@@ -9,7 +10,7 @@ export default function Home() {
     <>
       <header className={header}>
         <div className={slideshow}>
-
+          <ImageSlideshow />
         </div>
         <div>
           <div className={hero}>
@@ -23,7 +24,7 @@ export default function Home() {
         </div>
       </header>
       <main>
-      <section className={section}>
+        <section className={section}>
           <h2>How it works</h2>
           <p>
             NextLevel Food is a platform for foodies to share their favorite
